@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen
+        android:key="com.android.settings.Settings"
+        android:summary="Opens your device Settings"
+        android:title="Open Settings" />
+    <PreferenceScreen
+        android:icon="@drawable/su"
+        android:title="SuperSU"
+        android:key="eu.chainfire.supersu.MainActivity"
+        android:summary="Root Access Control" />
+    <PreferenceScreen
+        android:title="Open Potato Clock"
+        android:key="com.potato.clock.main.Main"
+        android:summary="Potato Clock Control" />
+    <!--<PreferenceScreen android:icon="@drawable/minit" android:title="3Minit Battery" android:summary="3Minit Control">
+        <intent android:targetPackage="com.three.minit.minitbatterysettings.free" android:action="android.intent.category.DEFAULT" android:targetClass="com.three.minit.minitbatterysettings.MainActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/viper" android:title="Viper4Android" android:summary="">
+        <intent android:targetPackage="com.vipercn.viper4android_v2" android:action="android.intent.category.DEFAULT" android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android" />
+    </PreferenceScreen>-->
+</PreferenceScreen>

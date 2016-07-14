@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Recent Button">
+        <CheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornertask" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+        <CheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornertask" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+        <CheckBoxPreference android:title="Center" android:key="cocoyaya_centertask" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Home Button">
+        <CheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornerhome" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+        <CheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornerhome" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+        <CheckBoxPreference android:title="Center" android:key="cocoyaya_centerhome" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Lock Button">
+        <CheckBoxPreference android:title="Right side" android:key="cocoyaya_rightcornerlock" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+        <CheckBoxPreference android:title="Left side" android:key="cocoyaya_leftcornerlock" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+        <CheckBoxPreference android:title="Center" android:key="cocoyaya_centerlock" android:defaultValue="false" android:summaryOn="On" android:summaryOff="Off" />
+    </PreferenceCategory>
+    <SwitchPreference android:title="Power Saving Mode Notifications" android:key="psm_notif" android:defaultValue="true" android:summaryOn="Power Saving Mode notification is enabled" android:summaryOff="Power Saving Mode notification is disabled" />
+    <PreferenceCategory android:title="Gesture anywhere on Home screen">
+        <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Double tap" android:key="doubletap" android:summary="%s" android:entryValues="@array/launcher_gesture_values" />
+        <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Up" android:key="swipe_up" android:summary="%s" android:entryValues="@array/launcher_gesture_values" />
+        <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Down" android:key="swipe_down" android:summary="%s" android:entryValues="@array/launcher_gesture_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Removable Notifications">
+        <SwitchPreference android:title="Make Ongoing Notifications Removable" android:key="ongoing_notifications" android:defaultValue="false" android:summaryOn="Ongoing Notifications are removeable" android:summaryOff="Ongoing Notifications are permanent" />
+    </PreferenceCategory>
+    <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/tw_effect_entries" android:title="Touchwiz Page Effect" android:key="tw_page_effect" android:defaultValue="1" android:entryValues="@array/tw_effect_values" />
+    <PreferenceCategory android:title="Quicklaunch">
+        <SwitchPreference android:title="Quicklaunch panel" android:key="quick_launch_visible" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <SwitchPreference android:title="Show app text" android:key="quick_launch_text_visible" android:dependency="quick_launch_visible" android:defaultValue="true" />
+        <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/num_vis_buttons_entries" android:title="Number of visible buttons" android:key="quick_launch_vis_buttons" android:defaultValue="5" android:entryValues="@array/num_vis_buttons_values" />
+        <SwitchPreference android:title="Show devider" android:key="quick_launch_show_devider" android:dependency="quick_launch_visible" android:defaultValue="true" />
+        <SwitchPreference android:title="Show add app button" android:key="quick_launch_show_add" android:dependency="quick_launch_visible" android:defaultValue="true" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference android:title="Text color" android:key="quick_launch_text_color" android:dependency="quick_launch_visible" android:defaultValue="0xffffffff" alphaSlider="false" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference android:title="Background color" android:key="quick_launch_background_color" android:dependency="quick_launch_visible" android:defaultValue="0x0" alphaSlider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Flash Light">
+        <SwitchPreference android:title="Flash Light" android:key="torchlight_enable" android:summary="Turn on the torch light by pressing and holding the volume up key while the screen is off" android:defaultValue="1" />
+        <com.wubydax.romcontrol.prefs.MyListPreference android:entries="@array/torchlight_timeout_entries" android:title="Torchlight timeout" android:key="torchlight_timeout" android:dependency="torchlight_enable" android:defaultValue="30000" android:entryValues="@array/torchlight_timeout_values" />
+    </PreferenceCategory>
+    <com.wubydax.romcontrol.prefs.FilePreference android:title="Hide QuickSettings Favorites" android:key="modcfg_hide_qs_favorites" android:defaultValue="false" android:summaryOn="Hidden" android:summaryOff="Shown" />
+    <PreferenceScreen android:title="Restore all Colors" android:key="script#restore.colors.all" android:summary="Restores all color startusbar, lockscreen, notification panel" />
+</PreferenceScreen>

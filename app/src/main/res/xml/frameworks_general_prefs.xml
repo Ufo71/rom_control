@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/logo" android:layout_width="fill_parent" android:layout_height="135.0dip" />
+    <PreferenceCategory android:title="Developers...">
+        <Preference android:title="darkera13" android:summary="Developers" />
+        <Preference android:title="Ufo71" android:summary="Developers">
+            <intent android:action="android.intent.action.VIEW" android:data="https://www.facebook.com/groups/1576587442587505/" />
+        </Preference>
+        <Preference android:title="Albe95" android:summary="Developers">
+            <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=5403589" />
+        </Preference>
+        <Preference android:title="Boostermbkking" android:summary="Developers">
+            <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=4041708" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Version Ufo71 Control">
+        <PreferenceScreen android:title="1.0" android:summary="Stable version, date 14/7/2016" />
+    </PreferenceCategory>
+</PreferenceScreen>
